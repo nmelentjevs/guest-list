@@ -73,7 +73,7 @@ const AttendeeList = ({ history, loadingGuests }) => {
               id="name"
               required
               onChange={e => handleSearch(e)}
-              spanText="Search your name"
+              spanText="Click to search your name"
             />
             <ul style={{ padding: 0 }} className="attendee-list">
               {displayedContacts.length > 0 ? (
