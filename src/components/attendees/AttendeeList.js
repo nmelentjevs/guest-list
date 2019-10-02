@@ -25,6 +25,11 @@ const AttendeeList = ({ history, loadingGuests }) => {
       setDisplayedContacts(res.data.guestList);
       setContacts(res.data.guestList);
     });
+
+    // Focus on input when confirming email
+    const nameForm = document.getElementsByClassName('name-form')[0];
+    const input = nameForm.firstChild;
+    input.focus();
   }, []);
 
   // Component Controllers
@@ -60,7 +65,7 @@ const AttendeeList = ({ history, loadingGuests }) => {
     <FlexCenter classNames="flex-center">
       <CSSTransition in={loadingGuests} timeout={500} classNames="attendees">
         <div className="holder">
-          <div>
+          <div className="name-form">
             <DefaultInput
               type="text"
               name="name"
