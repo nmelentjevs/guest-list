@@ -46,8 +46,7 @@ const DataCapture = ({ match, ...props }) => {
 
   const submitAttendee = () => {
     const { name } = match.params;
-
-    if (checked) sendEmail(confirmedEmail, 'Beautiful', { templateVars: name });
+    if (checked) sendEmail(match.params.email === 'undefined' ? confirmedEmail : match.params.email, 'Beautiful', {templateVars: name });
     setModalShow(true);
   };
 
