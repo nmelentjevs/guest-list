@@ -1,0 +1,41 @@
+.salmon-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.salmon-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.salmon-exit {
+  opacity: 1;
+}
+
+.salmon-exit-active {
+  opacity: 0;
+  transform: scale(0.2);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.attendees-enter {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.attendees-enter-active {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.attendees-exit {
+  opacity: 0;
+}
+
+.attendees-exit-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 750ms, transform 750ms;
+}

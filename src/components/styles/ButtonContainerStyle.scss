@@ -1,0 +1,55 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  .confirm-email-button {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    color: darken(#53D769, 30%);
+    border: 1px solid #53D769;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #53D769;
+      color: white;
+      transition: background-color .3s;
+    }
+  }
+
+  .incorrect-email {
+    &:hover {
+      background-color: #f44336;
+      color: white !important;
+    }
+  }
+
+  .back-button {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    color: darken(#f44336, 30%);
+    border: 1px solid #f44336;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #f44336;
+      color: white;
+      transition: background-color .3s;
+    }
+  }
+}
