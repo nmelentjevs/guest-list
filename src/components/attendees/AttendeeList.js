@@ -39,7 +39,6 @@ const AttendeeList = ({ history, loadingGuests }) => {
       let searchValue = el.name.toLowerCase();
       return searchValue.indexOf(searcjQery) !== -1;
     });
-    console.log(e.target.value === '');
     if (e.target.value === '') {
       setDisplayedContacts(contacts);
     } else {

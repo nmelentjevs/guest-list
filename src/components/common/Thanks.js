@@ -6,8 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Heading from './Heading';
 
 // Helpers
-import {save} from '../helpers/save'
-import {reset} from '../helpers/reset'
+import { save } from '../helpers/save';
+import { reset } from '../helpers/reset';
 
 const Thanks = props => {
   // Component State
@@ -20,8 +20,8 @@ const Thanks = props => {
       return () => {
         if (timer === 1) {
           props.setMockLoading(true);
-          save(props)
-          reset(props)
+          save(props);
+          reset(props);
         }
       };
     }
