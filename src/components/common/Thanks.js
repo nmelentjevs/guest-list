@@ -45,9 +45,9 @@ const Thanks = props => {
       <Modal.Body>
         <Heading text="Your data is confidential" />
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          Our Company securely stores your data at X. Our Company will keep your
+          Y for Z. Once this time period has expired, we will delete your data
+          by W.
         </p>
       </Modal.Body>
       <Modal.Footer

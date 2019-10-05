@@ -123,6 +123,10 @@
     background: #999;
   }
 
+  input#name.question {
+    text-align: center;
+  }
+
   input.question:valid~input[type="submit"],
   textarea.question:valid~input[type="submit"] {
     -webkit-animation: appear 1s forwards;
