@@ -33,6 +33,12 @@ const DataCapture = ({ match, ...props }) => {
   useEffect(() => {
     setValid(validateEmail(match.params.email));
 
+    setConfirmedEmail(match.params.email);
+
+    if (match.params.email === 'undefined') {
+      setConfirmedEmail('');
+    }
+
     // Focus on input when confirming email
     const emailForm = document.getElementsByClassName('email-form')[0];
     const input = emailForm.firstChild;
@@ -46,7 +52,14 @@ const DataCapture = ({ match, ...props }) => {
 
   const submitAttendee = () => {
     const { name } = match.params;
-    if (checked) sendEmail(match.params.email === 'undefined' ? confirmedEmail : match.params.email, 'Beautiful', {templateVars: name });
+    if (checked)
+      sendEmail(
+        match.params.email === 'undefined'
+          ? confirmedEmail
+          : match.params.email,
+        'Beautiful',
+        { templateVars: name }
+      );
     setModalShow(true);
   };
 
